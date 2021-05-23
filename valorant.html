@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Website Title -->
+    <title>Document</title>
+    <!-- Bootstrap -->
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Font-Awesome -->
+    <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Lightbox -->
+	<link href="assets/lightbox/css/lightbox.css" rel="stylesheet">
+    <!-- Text Rotator-->
+	<link href="assets/textrotator/simpletextrotator.css" rel="stylesheet">
+	<!-- FlexSlider -->
+    <link href="assets/flexslider/flexslider.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- Global -->
+    <link href="css/main.css" rel="stylesheet">
+	<!-- Theme Style -->
+  <link href="css/style.css" rel="stylesheet">
+	<!-- Animations -->
+    <link href="css/animate.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="dist/device-mockups.min.css">
+    
+    <style>
+      @keyframes animate-bg{
+	0%,100%{
+		background: url(img/v1.jpg) right bottom no-repeat;
+		background-size: cover;
+	}
+	20%{
+		background: url(img/v2.jpg) right bottom no-repeat;
+		background-size: cover;
+	}
+	40%{
+		background: url(img/v3.jpg) right bottom no-repeat;
+		background-size: cover;
+	}
+	60%{
+		background: url(img/v4.jpg) right bottom no-repeat;
+		background-size: cover;
+	}
+	80%{
+		background: url(img/v5.jpg) right bottom no-repeat;
+		background-size: cover;
+	}
+
+}
+    </style>
+  </head>
+    <body id="top">
+
+      <!-- ****************************** Preloader ************************** -->
+      <div id="preloader"></div>
+
+
+	  	<!-- ==========================
+        HEADER SECTION 
+        =========================== -->
+        <header id="home">
+		    <!-- creative menu -->
+            <div class="container-fluid">
+              <div class="row">
+                <div class="menu-wrap">
+				<nav class="menu">
+				    <!-- Menu Links -->
+					<div class="icon-list">
+            <a href="index.html"><i class="fa fa-fw fa-home"></i><span>Home</span></a>
+						<a href="mypassion.html"><i class="fa fa-fw fa-quote-left"></i><span>About</span></a>
+					</div>
+				</nav>
+			    </div>
+			    <button class="menu-button" id="open-button"></button><!-- menu button -->
+              </div><!--/row-->
+            </div><!--/container-->
+		  <!-- Header Image -->
+          <section class="hero" id="hero">
+            <!-- Carousel wrapper -->
+    <!-- Controls -->
+    <!-- <button
+      class="carousel-control-prev"
+      type="button"
+      data-mdb-target="#carouselVideoExample"
+      data-mdb-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-mdb-target="#carouselVideoExample"
+      data-mdb-slide="next"
+    >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+    </div> -->
+    <!-- Carousel wrapper -->
+      </section>
+      <div
+          id="carouselVideoExample"
+          class="carousel slide carousel-fade"
+          style="height: 100vh"
+          data-mdb-ride="carousel"
+          >
+
+          <!-- Inner -->
+          <div class="carousel-inner h-100">
+            <!-- Single item -->
+            <div class="carousel-item active h-100">
+              <video class="img-fluid" autoplay loop muted>
+                <source src="videos/valorant.mov" type="video/mp4" />
+              </video>
+              <div class="carousel-caption d-none d-md-block">
+                <h1 class="animated fadeInDown">
+                  <span style="color:#E04343;">Va</span><span style="color:#FFE800">lo</span>rant
+                </h1><!-- Title -->
+                <h3 class="animated fadeInUp delay-05s"><span class="rotate">Quality 1,Quality 2,Quality 3</span></h3><!-- Text Rotator -->
+                <div class="row">
+                  <div class="col-md-6 col-md-offset-3 text-center">
+                    <a href="valorant.html#about" class="scrollto wow fadeInUp delay-5s ">
+                      <p>SEE MORE</p>
+                      <p class="scrollto--arrow"><img src="img/scroll-down.png" alt="scroll down arrow"></p>
+                    </a>
+                  </div>
+                </div>   
+              </div>
+            </div>
+          </div>
+          <!-- Inner -->
+          </section>
+		  <!-- Header Image End -->
+        </header>
+		<!-- ==========================
+        HEADER SECTION END  
+        =========================== -->
+		
+		
+		
+		
+		<!-- ==========================
+        ABOUT SECTION  
+        =========================== -->
+        <section class="intro text-center section-padding color-bg" id="about">
+          <div class="container">
+		    <!-- WELCOME TEXT -->
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2 wp1">
+                <h1 class="arrow">A little <span>about</span> it</h1><!-- Headline -->
+				<!-- about / welcome text -->
+                <p>Valorant is a team-based tactical shooter and first-person shooter set in the near future.[2][3][4][5] Players play as one of a set of agents, characters designed based on several countries and cultures around the world.[5] In the main game mode, players are assigned to either the attacking or defending team with each team having five players on it. Agents have unique abilities, each requiring charges, as well as a unique ultimate ability that requires charging through kills, deaths, or spike actions. Every player starts each round with a "classic" pistol and one or more "signature ability" charges.
+                </p>
+                </div>
+            </div>
+          </div>
+        </section>
+
+
+
+
+<!-- ==========================
+        SERVICE SECTION 
+        =========================== -->
+        <section class="features text-center section-padding" id="service">
+          <div class="row">
+            <div class="col-md-12">
+              <h1 class="arrow">These are somethings that I <span style="color: #E04343">love About It</span> </h1>
+            </div>
+          </div>
+          <div class="container" style="border-bottom: 1px solid black;">
+        <!-- Headline -->
+            <div class="row">
+              <div class="col-md-12">
+          <div class="services">
+          <!-- Service Box 1 -->
+                  <div class="col-md-6 wp2 item">
+                    <br/><br/>
+                    <p>For many hardcore players, CSGO is the gold standard for FPS titles. The game is constantly praised for its mechanics, its in game economy, and its balance between individual play making and the necessity of teamwork. Valorant has already drawn multiple comparisons to CSGO, which is very intentional of Riot. Some of Valorant’s lead designers either worked on CSGO or were professional CSGO players. Riot is looking to iterate on the success of CSGO and bring its own flair to the equation.
+                    </p>
+                  </div>
+          <!-- Service Box 2 -->
+                  <div class="col-md-6 wp2 item delay-05s">
+                    <div class="icon">
+                      <div class="image-cropper">
+                        <img src="/img/music.jpg" alt="avatar" class="profile-pic">
+                      </div>
+                    </div>
+                    
+                    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum
+                    primis in faucibus.</p> --><!-- Description -->
+                  </div>
+          </div>
+                  <div class="clearfix"></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+          <div class="services">
+          <!-- Service Box 1 -->
+          <div class="col-md-6 wp2 item">
+            <div class="icon">
+              <div class="image-cropper">
+                <img src="/img/music.jpg" alt="avatar" class="profile-pic">
+              </div>
+            </div>
+            
+            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum
+            primis in faucibus.</p> --><!-- Description -->
+          </div>
+          <!-- Service Box 2 -->
+            
+                  <div class="col-md-6 wp2 item delay-05s">
+                    <br/><br/>
+                    <p>Streamers can be a large boon to a game’s release. The successful release of Apex Legends was largely in part due to top streamers such as Ninja playing the game on its release date. Streamers help set the tone for whether a game is cool and offer a look at game play before the viewers commits to buying or downloading the game. Riot partnered with Twitch to feature top streamers playing Valorant before the game is released this summer. Gamers can get early access to Valorant by watching these streamers. A lucky few will receive an email providing them with access to Valorant while it’s still in beta.</p>
+                  </div>
+          </div>
+                  <div class="clearfix"></div>
+              </div>
+            </div>
+            
+          </div>
+        </section>
+        
+
+
+        <section class="features text-center section-padding" id="service1">
+          <div class="row">
+            <div class="col-md-12">
+              <h1 class="arrow">These are somethings that I <span style="color: #E04343">love About It</span> </h1>
+            </div>
+          </div>
+          <div class="container" style="border-bottom: 1px solid black;">
+
+          <div class="row">
+          <div class="col-md-12">
+          <div class="services">    
+            <p>For many hardcore players, CSGO is the gold standard for FPS titles. The game is constantly praised for its mechanics, its in game economy, and its balance between individual play making and the necessity of teamwork. Valorant has already drawn multiple comparisons to CSGO, which is very intentional of Riot. Some of Valorant’s lead designers either worked on CSGO or were professional CSGO players. Riot is looking to iterate on the success of CSGO and bring its own flair to the equation.
+            </p>
+          </div>
+          <div class="clearfix"></div>
+          </div>
+          </div>
+          <div class="row">
+          <div class="col-md-12">
+          <div class="services">
+          <div class="col-md-12 wp2 item delay-05s">
+          <div class="icon">
+            <div class="image-cropper">
+              <img src="/img/music.jpg" alt="avatar" class="profile-pic">
+            </div>
+          </div>
+          </div>
+          </div>
+          <div class="clearfix"></div>
+          </div>
+          </div>
+
+
+          <div class="row">
+          <div class="col-md-12">
+          <div class="services">
+          <div class="col-md-12 wp2 item delay-05s">
+            <br/><br/>
+              <p>Streamers can be a large boon to a game’s release. The successful release of Apex Legends was largely in part due to top streamers such as Ninja playing the game on its release date. Streamers help set the tone for whether a game is cool and offer a look at game play before the viewers commits to buying or downloading the game. Riot partnered with Twitch to feature top streamers playing Valorant before the game is released this summer. Gamers can get early access to Valorant by watching these streamers. A lucky few will receive an email providing them with access to Valorant while it’s still in beta.</p>
+          </div>
+          </div>
+          <div class="clearfix"></div>
+          </div>
+          </div>
+          <div class="row">
+          <div class="col-md-12">
+          <div class="services">
+          <div class="col-md-12 wp2 item">
+            <div class="icon">
+              <div class="image-cropper">
+                <img src="/img/music.jpg" alt="avatar" class="profile-pic">
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="clearfix"></div>
+          </div>
+          </div>
+            
+          </div>
+        </section>
+        <center><button type="button" class="btn btn-outline-danger" onclick="change()">Change View</button>
+        <button type="button" class="btn btn-outline-danger" onclick="resume()">Resume View</button>
+        </center>
+       
+		<!-- ==========================
+        ABOUT SECTION END
+        =========================== -->	
+
+		
+		
+		
+		<!-- ==========================
+        PORTFOLIO SECTION
+    =========================== -->
+		<!-- ==========================
+        PORTFOLIO SECTION END
+        =========================== -->
+			
+
+
+			
+		<!-- ==========================
+        CUSTOM SPACER
+        =========================== -->
+	
+		<!-- ==========================
+        CUSTOM SPACER END
+        =========================== -->
+		
+		
+
+    <!-- ==========================
+        BLOG SECTION 
+        =========================== -->
+    <!-- ==========================
+        BLOG SECTION END
+        =========================== -->
+    
+        
+		
+		<!-- ==========================
+        CLIENT SECTION 
+        =========================== -->
+		<!-- <div class="container-fluid">
+			<div class="row color-bg">
+				
+				<div class="col-md-6 nopadding features-intro-img wow fadeInLeft">
+					<div class="about-image" style="background-image:url(img/clients.png)"></div>
+				</div>
+				
+				<div class="col-md-6 nopadding about-text">
+				<h6>What our clients said</h6>
+					<div id="clientSlider">
+					   <ul class="slides">
+					       <li><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. <br>	<small>- Pete Rock, A New Tomorrow</small></p></li>
+						   <li><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. <br>	<small>- Michael Snowden, Creativeland CEO</small></p></li>
+						  <li><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. <br>	<small>- Tom Davis, GreenWonder</small></p>	</li>
+					   </ul>
+					</div>
+				</div>
+			</div>
+		</div> -->
+		<!-- ==========================
+        CLIENTS SECTION END
+        =========================== -->
+		
+		
+		
+		
+		
+		<!-- ==========================
+        NEWSLETTER SECTION 
+        =========================== -->
+        <!-- <section>
+		<div class="container-fluid">
+				<div class="row color-bg">
+				    <div class="col-md-6 nopadding subscribe text-center">
+					 <h1><i class="fa fa-paper-plane"></i><span>Subscribe our Newsletter</span></h1>
+                     <form action="index.html#">
+                       <input type="text" name="" value="" placeholder="" required>
+                       <input type="submit" name="" value="Send">
+                    </form>   
+					</div>
+					<div class="col-md-6 nopadding features-intro-img">
+						 <div class="about-image" style="background-image:url(img/newsletter.png)"></div>
+					</div>
+				</div>
+			</div>
+        </section> -->
+		<!-- ==========================
+        NEWSLETTER SECTION END
+        =========================== -->
+
+  <!-- <map name="infographic">
+    <area shape="poly" coords="130,147,200,107,254,219,130,228"
+          href="https://www.google.com/search?q=html&rlz=1C1SQJL_enIN859IN859&ei=v2h4YMWaNquZ4-EP_ZmL8Ao&oq=html&gs_lcp=Cgdnd3Mtd2l6EAMyBwgAELEDEEMyBAgAEEMyBAgAEEMyBwgAELEDEEMyBQgAELEDMgcIABCxAxBDMgIIADIFCAAQsQMyBQgAELEDMggIABCxAxCDAToOCC4QsQMQgwEQxwEQowJQmxJYgRhgmhpoAHAAeACAAaMBiAHhBZIBAzAuNZgBAKABAaoBB2d3cy13aXrAAQE&sclient=gws-wiz&ved=0ahUKEwiF9ufi1IDwAhWrzDgGHf3MAq4Q4dUDCA4&uact=5"
+          target="_blank" alt="HTML" />
+    <area shape="poly" coords="130,147,130,228,6,219,59,107"
+          href="https://www.google.com/search?q=css&rlz=1C1SQJL_enIN859IN859&oq=css&aqs=chrome..69i57j0i131i433l4j46i131i433j0i131i433l3j0i433.625j0j15&sourceid=chrome&ie=UTF-8"
+          target="_blank" alt="CSS" />
+    <area shape="poly" coords="130,147,200,107,130,4,59,107"
+          href="https://www.google.com/search?q=js&rlz=1C1SQJL_enIN859IN859&ei=oGh4YJyhEO2Z4-EPtdKhmA4&oq=js&gs_lcp=Cgdnd3Mtd2l6EAMyBwgAELEDEEMyBwgAELEDEEMyCggAELEDEIMBEEMyBAgAEEMyCggAELEDEIMBEEMyBAgAEEMyBAgAEEMyBAgAEEMyBAgAEEMyBAgAEEM6CAgAELEDEIMBOgIIADoFCAAQsQM6BQguELEDUKYbWPkcYL0eaABwAngAgAGjAYgBzQOSAQMwLjOYAQCgAQGqAQdnd3Mtd2l6wAEB&sclient=gws-wiz&ved=0ahUKEwic8d3T1IDwAhXtzDgGHTVpCOMQ4dUDCA4&uact=5"
+          target="_blank" alt="JavaScript" />
+</map>
+<img usemap="#infographic" src="https://interactive-examples.mdn.mozilla.net/media/examples/mdn-info2.png" alt="Demo" style="width: 260px; height: 232px"/> -->
+
+
+		
+		<!-- ==========================
+        CONTACT SECTION
+        =========================== -->
+        <section class="text-center section-padding contact-wrap" id="contact">
+		  <!-- To Top Button -->
+          <!--<a href="index.html#top" class="up-btn"><i class="fa fa-chevron-up"></i></a>-->
+          <div class="container">
+		    <!-- Headline -->
+            <div class="row">
+              <div class="col-md-12">
+                <h1 class="arrow">Drop <span>me</span> a line</h1>
+              </div>
+            </div>
+            <div class="row contact-details">
+			  <!-- Adress Box -->
+              <div class="col-md-4">
+                <div class="dark-box box-hover">
+                  <h2><i class="fa fa-map-marker"></i><span>Address</span></h2>
+                  <p>40/17 Nevertire Street</p>
+                </div>
+              </div>
+			  <!-- Phone Number Box -->
+              <div class="col-md-4">
+                <div class="dark-box box-hover">
+                  <h2><i class="fa fa-mobile"></i><span>Phone</span></h2>
+                  <p>+61 411661458</p>
+                </div>
+              </div>
+			  <!-- E-Mail Box -->
+              <div class="col-md-4">
+                <div class="dark-box box-hover">
+                  <h2><i class="fa fa-paper-plane"></i><span>Email</span></h2>
+                  <p><a href="index.html#">u6544985@anu.edu.au</a></p>
+                </div>
+              </div>
+            </div>
+			<!--<div class="row">
+			  <div class="col-md-6">
+			    <div id="googlemaps"></div>
+			  </div>
+			  <div class="col-md-6 contact">
+			     <form role="form">
+				            
+                            <div class="row">
+                                <div class="col-md-6">
+								
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Your name">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+								    
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="Email address">
+                                    </div>
+                                </div>
+                            </div>
+							
+                            <div class="form-group">
+                                <textarea class="form-control" placeholder="Write you message here..." style="height:232px;"></textarea>
+                            </div>
+							
+                            <button type="submit" class="btn btn-send">
+                                Send message
+                            </button>
+                        </form>
+			  </div>
+			</div>-->
+			<br>
+			<!-- Social Buttons - use font-awesome, past in what you want -->
+            <div class="row">
+              <div class="col-md-12">
+                <ul class="social-buttons">
+                  <li><a href="index.html#" class="social-btn"><i class="fa fa-dribbble"></i></a></li><!-- dribble -->
+                  <li><a href="index.html#" class="social-btn"><i class="fa fa-twitter"></i></a></li><!-- twitter -->
+                  <li><a href="index.html#" class="social-btn"><i class="fa fa-facebook"></i></a></li><!-- facebook -->
+				  <li><a href="index.html#" class="social-btn"><i class="fa fa-deviantart"></i></a></li><!-- deviantart -->
+				  <li><a href="index.html#" class="social-btn"><i class="fa fa-youtube"></i></a></li><!-- youtube -->
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+		<!-- ==========================
+        CONTACT SECTION END
+        =========================== -->
+		
+		
+		
+		<!-- ==========================
+        FOOTER SECTION
+        =========================== -->
+        <footer>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <p>All Rights Reserved &copy; 2021
+              </div>
+            </div>
+          </div>
+        </footer>
+		<!-- ==========================
+        FOOTER SECTION END
+        =========================== -->		
+		
+		
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- SmoothScroll -->           
+    <script type="text/javascript" src="assets/smoothscroll/smoothscroll.js"></script>
+    <!-- Bootstrap -->
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/waypoints.min.js"></script>
+    <!-- classie.js -->
+	<script src="js/classie.js"></script>
+    <!-- FlexSlider -->
+    <script src="assets/flexslider/jquery.flexslider.js"></script>
+	<!-- Modernizr -->
+    <script src="js/modernizr.js"></script>
+	<!-- Text Rotator -->
+	<script src="assets/textrotator/jquery.simple-text-rotator.js"></script>
+	<!-- Lightbox.js -->
+    <script src="assets/lightbox/js/lightbox.min.js"></script>
+    <!-- Google Maps --> 
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeKBBPJTG3v5w3cNPAgM6ZsJiPyL1mP_o&amp;sensor=false"></script>
+	<!-- Theme JavaScript Core -->
+	<script src="js/main.js"></script>
+	<script src="js/script.js"></script>
+
+	<!-- GOOGLE MAPS DATA -->
+    <script type="text/javascript">
+    // When the window has finished loading create our google map below
+        google.maps.event.addDomListener(window, 'load', init);
+    
+        function init() {
+            // Basic options for a simple Google Map
+            // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+            var mapOptions = {
+                // How zoomed in you want the map to start at (always required)
+                zoom: 15,
+                
+                scrollwheel: false,
+
+                // The latitude and longitude to center the map (always required)
+                center: new google.maps.LatLng(-35.232610, 149.092110), // New York 
+
+                // How you would like to style the map. 
+                // This is where you would paste any style found on Snazzy Maps.
+                styles: [	{		featureType:'water',		stylers:[{color:'#F2F2F2'},{visibility:'on'}]	},{		featureType:'landscape',		stylers:[{color:'#FFFFFF'}]	},{		featureType:'road',		stylers:[{saturation:-100},{lightness:45}]	},{		featureType:'road.highway',		stylers:[{visibility:'simplified'}]	},{		featureType:'road.arterial',		elementType:'labels.icon',		stylers:[{visibility:'off'}]	},{		featureType:'administrative',		elementType:'labels.text.fill',		stylers:[{color:'#ADADAD'}]	},{		featureType:'transit',		stylers:[{visibility:'off'}]	},{		featureType:'poi',		stylers:[{visibility:'off'}]	}]
+            };
+
+            // Get the HTML DOM element that will contain your map 
+            // We are using a div with id="map" seen below in the <body>
+            var mapElement = document.getElementById('googlemaps');
+
+            // Create the Google Map using out element and options defined above
+            var map = new google.maps.Map(mapElement, mapOptions);
+        }
+	
+    </script>
+	
+	<!-- TEXT ROTATOR SETTINGS -->
+    <script type="text/javascript">
+    $(".rotate").textrotator({
+      animation: "fade", // You can pick the way it animates when rotating through words. Options are dissolve (default), fade, flip, flipUp, flipCube, flipCubeUp and spin.
+      separator: ",", // If you don't want commas to be the separator, you can define a new separator (|, &, * etc.) by yourself using this field.
+      speed: 2000 // How many milliseconds until the next word show.
+    });
+    </script>
+    <script>
+      document.getElementById('service1').style.display="none";
+      function change()
+      {
+        document.getElementById('service').style.display="none";
+        document.getElementById('service1').style.display="block";
+      }
+      function resume()
+      {
+        document.getElementById('service1').style.display="none";
+        document.getElementById('service').style.display="block";
+      }
+    </script>
+    </body>
+</html>

@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+}
+
+:root {
+    /* --square-length: 200px; */
+    /* --half-diagonal: 1.4 * var(--square-length) / 2; */
+    --half-diagonal: 10;
+    --square-length: var(--half-diagonal) * 2 / 1.4;
+    --origin-top: 70%;
+    --origin-left: 40%;
+}
+
+video {
+    object-fit: cover;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+svg {
+    width: 100%;
+    height: 100%;
+    stroke: white;
+    fill: white;
+}
+
+.designer-container {
+    position: relative;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    /* overflow: hidden; */
+    background-color: #0b1d0dad;
+}
+
+.diamond {
+    position: absolute;
+    height: calc(100vw/(5*1.414));
+    width: calc(100vw/(5*1.414));
+    transform: rotateZ(45deg);
+    outline: 1px solid rgba(180, 180, 180, 0.6);
+    color: white;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 500ms ease-in-out,
+                background-color 500ms ease-in-out;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.diamond:hover {
+    background-color: rgba(0, 0, 0, 0.603);
+    cursor: pointer;
+}
+
+.diamond:hover .logo {
+    opacity: 1;
+}
+
+.logo {
+    height: 70%;
+    width: 70%;
+    position: relative;
+    top: 15%;
+    left: 15%;
+    opacity: 0;
+    transition: opacity 1000ms ease-in-out,
+                transform 1000ms ease-in-out;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* border: 2px solid rgb(104, 156, 214); */
+}
+
+.visible {
+    visibility: visible;
+}
+
+.half_opaque {
+    opacity: 0.6;
+}
+
+.black_bg {
+    background-color: black;
+}
+
+.white_bg {
+    background-color: white;
+}
+
+.opaque {
+    opacity: 1;
+}
+
+.rotate_back {
+    transform: rotateZ(-45deg);
+}
+
+.controller_rotate {
+    transform: rotateZ(135deg);
+}
